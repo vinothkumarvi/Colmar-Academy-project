@@ -1,0 +1,548 @@
+/*--------------------------------------
+Universal Styles
+--------------------------------------*/
+
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90rem;
+    /*padding: 0 1.5rem;*/
+}
+
+h1 {
+    font-size: 3.125rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;;
+}
+
+.h2-white {
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.3125rem;
+    color: #3c3b3d;
+}
+
+.h3-white {
+    color: #fff;
+}
+
+
+
+/*--------------------------------------
+Navigation
+--------------------------------------*/
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4rem;
+    background-color: #fff;
+    color: #3c3b3d;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+/*Desktop Wrapper*/
+nav .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+/*Mobile Wrapper*/
+.mobile-wrapper {
+    display: none;
+    margin: 0 1.5rem;
+}
+
+/*Logo*/
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 1.5rem;
+}
+
+.gold-filter {
+    filter: invert(100%) sepia(21%) saturate(5683%) hue-rotate(306deg) brightness(87%) contrast(84%);
+}
+
+/*Navigation Links*/
+nav strong {
+    color:  #3c3b3d;
+}
+
+.nav-links a {
+    padding-left: 2rem;
+    text-decoration: none;
+    color:  #3c3b3d;
+    font-weight: bold;
+}
+
+/*Navigation Media Query for Desktop*/
+@media only screen and (min-width:771px) {
+    .nav-links a:hover {
+        color: #18171a ;
+    }
+}
+
+/*Navigation Media Query for Mobile*/
+@media only screen and (min-width: 200px) and (max-width: 770px) {
+    nav .wrapper {
+        display: none;
+    }
+
+    .mobile-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-wrapper .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .white-filter {
+        filter: invert(100%) sepia(11%) saturate(7487%) hue-rotate(295deg) brightness(115%) contrast(115%);
+    }
+}
+
+
+
+/*--------------------------------------
+Learn Something New Everyday
+--------------------------------------*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: #cec4c4;
+    color:  #3c3b3d;
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.75rem;
+}
+
+/*Image*/
+header img {
+    width: 60%;
+    margin-right: 0.75rem;
+}
+img{
+    box-shadow: 10px 10px 5px #3c3b3d;
+}
+
+/*Header Content*/
+header .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Button*/
+#header-button {
+    width: 80%;
+    text-align: center;
+    background-color: #3c3b3d ;
+    padding: 0.75rem 0;
+    color:  #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Learn Something New Everyday Media Query for Desktop*/
+@media only screen and (min-width:771px) {
+    #header-button:hover {
+        background-color: #fff;
+        color:  #3c3b3d;
+    }
+}
+
+/*Learn Something New Everyday Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .wrapper {
+        align-items: center;
+        margin: 0;
+        padding: 0 1rem 2rem;
+    }
+
+    header img {
+        width: 100%;
+        margin:0;
+    }
+
+    header .button {
+        padding: 0;
+        background-color:  #3c3b3d;
+        font-weight: bold;
+        width: 100%;
+    }
+}
+
+/*--------------------------------------
+More Information
+--------------------------------------*/
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1.5rem;
+    background-color: #F3F5F5;
+}
+
+/*Main Article*/
+.info-main {
+    width: 60%;
+    padding: 2rem 1.5rem;
+    border-right: 2px solid #3c3b3d;
+}
+
+.info-main img {
+    width: 100%;
+    margin-right: 0 1.5rem;
+}
+
+.info-links {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+}
+
+/*Sidebar*/
+.info-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#orientation, #campus {
+    border-bottom: 2px solid #3c3b3d;
+}
+
+.info-links .desktop-img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+.info-links .mobile-img {
+    display: none;
+}
+
+.info-links .text {
+    padding: 0 0.5rem;
+}
+
+.info-block a {
+    text-decoration: none;
+    color: #201f22;
+}
+
+/*More Information Media Query for Desktop*/
+@media only screen and (min-width: 771px) {
+    .info-block:hover {
+        background-color: #d4c2e4;
+        color: #201f22;
+    }
+    
+    .info-block:hover h3  {
+        color: #201f22;
+    }
+    
+    .info-block:hover a {
+        color: #201f22;
+    }
+}
+
+/*More Information Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+
+    .information {
+        padding: 1rem 1rem 0;
+    }
+
+    .info-main {
+        display: none;
+    }
+
+    .info-links {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-block {
+        display: block;
+    }
+
+    #orientation, #campus, #lecture {
+        border: 0;
+        margin-bottom: 2rem;
+    }
+
+    #campus, #lecture {
+        margin-top: 2rem;
+        background-color: #3c3b3d;
+    }
+
+    .info-block .desktop-img {
+        display: none;
+    }
+
+    .info-block .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .info-block .text {
+        padding: 0 1rem;
+    }
+}
+
+
+/*--------------------------------------
+Start Learning
+--------------------------------------*/
+.start-learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4.5rem;
+    background-color: #a596b3;
+    color: #fff;
+}
+
+.start-learning .courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.course-card {
+    width: 26%;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    transition-property: all;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-in-out;
+}
+
+.course-card:hover {
+    transform: scale(1.075);
+}
+
+.start-learning img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.start-learning .text {
+    margin-top: -1.5rem;
+    padding: 1rem 1rem 1.5rem;
+}
+
+.start-learning p {
+    color: #767676;
+}
+
+/*Start Learning Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    .start-learning {
+        border-bottom: 2px solid #cdb684;
+        border-top: 2px solid #cdb684;
+        padding: 2rem 1rem;
+    }
+
+    .start-learning .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 100%;
+        background-color: #fff;
+        margin: 0.5rem 0;
+    }
+
+    .start-learning .text {
+        margin: 1rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .start-learning img {
+        display: none;
+    }
+
+    .start-learning p {
+        display: none;
+    }
+}
+
+/*--------------------------------------
+Thesis Exhibit
+--------------------------------------*/
+.thesis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 1.5rem;
+    background-color: #F3F5F5;
+}
+
+.thesis .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*Main Article*/
+.thesis-main {
+    width: 60%;
+    padding-right: 1.5rem;
+}
+
+.thesis video {
+    width: 100%;
+}
+
+/*Sidebar*/
+.thesis aside {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-bottom: none;
+
+}
+
+#Fisma, #now-then {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.thesis-block img {
+    height: auto;
+    width: 35%;
+    margin: 1rem;
+}
+
+.thesis-block .text {
+    padding: 0 0.5rem;
+}
+
+.thesis-block:hover {
+    background-color: #d4c2e4;
+    color: #fff;
+}
+
+.thesis-block:hover h3 {
+    color: #fff;
+}
+
+/*Thesis Exhibit Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    .thesis {
+        padding: 1rem 0 1.5rem 0;
+        /*margin: 1rem 0 ;*/
+    }
+    
+    .thesis-main {
+        width: 100%;
+        padding: 0;
+        /*margin-bottom: 1.5rem;*/
+    }
+    
+    .thesis aside {
+        display: none;
+    }
+
+    .thesis-main .text {
+        display: none;
+    }
+
+    .thesis h2 {
+        margin: 1rem 0;
+    }
+}
+
+
+/*--------------------------------------
+Footer
+--------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    color: #3c3b3d;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8e8e8e;
+    padding: 0 0.5rem
+}
+
+.footer-links a:hover {
+    color: #3c3b3d;
+}
+
+/*Footer Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    footer {
+        border-top: none;
+        padding: 1rem;
+    }
+    
+    .footer-links {
+        display: none;
+    }
+}
